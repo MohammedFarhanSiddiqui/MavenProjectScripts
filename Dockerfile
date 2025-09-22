@@ -1,4 +1,4 @@
 FROM tomcat:9.0
-COPY target/*.war \Users\fs\git\MetroRepo\target\BookMetroTicket.war
+COPY target/*.war /usr/local/tomcat/webapps/
 EXPOSE 8080
-CMD ["cataline.sh","run"] 
+CMD ["catalina.sh","run"] 
